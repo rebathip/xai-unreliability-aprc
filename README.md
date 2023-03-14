@@ -27,4 +27,4 @@ This repository contains two Python scripts:
 
 ## How it Works
 - `calculate_prob_diffs.py` uses the pre-trained InceptionV3 model to predict the probability values for each image. The images are perturbed using Gaussian blur and the probabilities are stored in a `.pkl` file.
-- `metrics_calculator.py` reads the `.pkl` files generated in the previous step, computes the ARPPD and APRC between the probabilities for each triplet of images, and outputs the mean and standard deviation of the metrics for each label and overall.
+- `metrics_calculator.py` reads the `.pkl` files generated in the previous step, computes the ARPPD and APRC between the probabilities for each triplet of probability differences(corresponding to each sigma of Gaussian Blur), and outputs the mean and standard deviation of the metrics for each label and overall.
